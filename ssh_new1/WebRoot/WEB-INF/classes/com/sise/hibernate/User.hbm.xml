@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+    <hibernate-mapping package="com.sise.hibernate">
+       <class name="User" table="user">
+           <id name="id">
+               <generator class="native"/>
+           </id>
+           <property name="username"  length="12" not-null="true"/>
+           <property name="password"  length="16" not-null="true"/>
+           <property name="kind"  length="16" not-null="false"/>
+       </class>
+    </hibernate-mapping>
+
